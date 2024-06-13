@@ -647,7 +647,7 @@ a.recipe_main:hover {
 
 p.recipe_name {
   font-size: 28px;
-  text-align: center;
+/*   text-align: center; */
 }
 
 img.recipe_main_img {
