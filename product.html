@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Яблоки Гала</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pattern.css">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="group">
+                <img src="images/logo.svg" alt="" class="logo" />
+                <a href="index.html" class="name">Орго<span class="name">Маркет</span></a>
+            </div>
+            <div class="group">
+                <a href="catalog.html" class="menu" title="Каталог"><img src="images/menu.svg" alt="" class="menu"
+                        id="menu" onmouseover="changeSrc(this)" onmouseout="changeSrc(this)" /></a>
+                <input class="find" type="text" placeholder="Введите ключевое слово" title="Введите слово" />
+                <img src="images/cross.svg" alt="" class="cross" id="cross" onmouseover="changeSrc(this)"
+                    onmouseout="changeSrc(this)" />
+                <img src="images/find.svg" class="find" id="find" onmouseover="changeSrc(this)"
+                    onmouseout="changeSrc(this)" />
+            </div>
+            <div class="location">
+                <img src="images/location.svg" alt="" class="location" id="loc" onmouseover="changeSrc(this)"
+                    onmouseout="changeSrc(this)" />
+                <input class="location" type="text" placeholder="Введите адрес" title="Введите адрес" />
+            </div>
+            <div class="group">
+                <a href="basket.html" class="basket" title="Корзина"><img src="images/basket.svg" alt="" class="basket"
+                        id="bas" onmouseover="changeSrc(this)" onmouseout="changeSrc(this)" /></a>
+                <a href="" class="account no_active" title="Аккаунт"><img src="images/account.svg" alt=""
+                        class="account" id="acc" onmouseover="changeSrc(this)" onmouseout="changeSrc(this)" /></a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="information_content">
+            <div class="product-container" id="product-container">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+                <p class="title">НАШИ КОНТАКТЫ</p>
+                <p class="info">Служба поддержки: 8 912-345-67-89</p>
+                <p class="info">OrgoMarket@mail.ru</p>
+                <img src="images/vb.svg" alt="" class="contact" />
+                <img src="images/wa.svg" alt="" class="contact" />
+            </div>
+            <div class="bottom">
+                <p class="info">Интернет-магазин: “ОргоМаркет.ру”</p>
+                <p class="info">График работы: пн-вс c 8:00 до 23:00</p>
+                <p class="info">
+                    Юридический адрес: г. Москва, Лиственничная аллея, д. 2
+                </p>
+            </div>
+            <div>
+                <p class="title">ПОКУПАТЕЛЮ</p>
+                <a href="" class="info no_active">Программа лояльности</a>
+                <a href="questions.html" class="info">Часто задаваемые вопросы</a>
+                <a href="" class="info no_active">Вход/регистрация</a>
+                <a href="recipe.html" class="info">Рецепты</a>
+            </div>
+            <div>
+                <p class="title">О НАС</p>
+                <a href="about.html" class="info">О компании</a>
+                <a href="" class="info no_active">Правовая информация</a>
+            </div>
+            <div>
+                <p class="title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</p>
+                <img src="images/vk.svg" alt="" class="contact" />
+                <img src="images/tg.svg" alt="" class="contact" />
+                <img src="images/yt.svg" alt="" class="contact" />
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

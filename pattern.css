@@ -1,0 +1,575 @@
+div.pattern_content {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+* {
+  font-family: "Ubuntu";
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #016a08;
+  margin: 30px 0 15px 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #016a08;
+  margin-top: 30px;
+}
+
+p.text {
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 150%;
+  text-indent: 60px;
+}
+
+li {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 60px;
+  text-indent: 30px;
+  list-style-position: outside;
+}
+
+div.cert {
+  margin: 30px 60px;
+  display: inline-flex;
+}
+
+img.cert {
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p.cert {
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 5px;
+}
+
+div.questions {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+p.question {
+  font-size: 20px;
+  margin: 30px 0 0 0;
+}
+
+p.question:hover {
+  color: #016a08;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+p.question.active {
+  color: #da6900;
+  font-weight: 600;
+
+}
+
+p.answer {
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  line-height: 150%;
+  text-indent: 60px;
+  display: none;
+}
+
+a.answer {
+  color: #016a08;
+  font-weight: 600;
+}
+
+a.answer:hover {
+  color: #da6900;
+}
+
+/* 
+    Basket
+*/
+
+div.products {
+  margin-top: 50px;
+  width: 700px;
+  margin-bottom: 30px;
+}
+
+#clearBasket {
+  background-color: white;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  color: #da6900;
+}
+
+#clearBasket:hover {
+  font-weight: 600;
+}
+
+div.product {
+  position: relative;
+  height: 80px;
+  width: 700px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.2);
+  transition: 0.1s;
+}
+
+div.product:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+div.product_img {
+  height: 65px;
+  width: 100px;
+  text-align: center;
+}
+
+img.product {
+  height: 65px;
+}
+
+p.product {
+  margin-left: 40px;
+  font-size: 20px;
+  width: 250px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+p.product_price {
+  position: absolute;
+  font-size: 24px;
+  color: #016a08;
+  right: 90px;
+  font-weight: 600;
+}
+
+div.product>img.cross {
+  position: absolute;
+  right: 50px;
+  width: 31px;
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+}
+
+a.return {
+  color: #016a08;
+  font-weight: 600;
+  font-size: 22px;
+  transition: 0.1s;
+  text-align: right;
+  display: block;
+}
+
+a.return:hover {
+  color: #da6900;
+  transition: 0.1s;
+}
+
+div.total {
+  margin-top: -47.5px;
+  width: 350px;
+  height: 300px;
+  border-radius: 50px;
+  background-color: rgba(120, 163, 0, 0.2);
+  padding: 50px;
+  font-size: 22px;
+}
+
+div.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+div.total_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+p.buy {
+  text-align: center;
+  font-weight: 600;
+  color: #016a08;
+  margin-top: 40px;
+}
+
+p.buy:hover {
+  color: #da6900;
+  cursor: default;
+}
+
+div.information_price {
+  position: relative;
+  margin-top: 30px;
+}
+
+p.information_price {
+  position: relative;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+img.information_buy {
+  position: relative;
+  width: 50px;
+  height: auto;
+}
+
+div.product_information_basket,
+div.quantity {
+  transition: 0.1s;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  display: inline-flex;
+  margin-top: 30px;
+}
+
+div.product_information_basket:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+p.information_buy_p {
+  font-size: 22px;
+  line-height: 22px;
+  margin-left: 15px;
+}
+
+div.quantity {
+  position: relative;
+  right: 0;
+  display: none;
+  margin-top: 60px;
+}
+
+div.basket_quantity {
+  position: absolute;
+  right: 200px;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+/* 
+    Product
+*/
+
+div.information_content {
+  margin-top: 60px;
+  width: 100%;
+  align-items: start;
+}
+
+div.information_img {
+  height: 500px;
+  width: 400px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  position: relative;
+}
+
+img.information_img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+img.information_cert {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  right: -10px;
+  bottom: -35px;
+}
+
+img.information_cert:hover {
+  cursor: pointer;
+}
+
+div.information {
+  width: 700px;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  height: 500px;
+}
+
+p.information_h {
+  font-weight: 600;
+  font-size: 28px;
+  color: #016a08;
+  margin-bottom: 30px;
+}
+
+p.information {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+table.information {
+  margin: 15px 0;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+td {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(120, 163, 0, 0.2);
+  border-radius: 50px;
+  line-height: 150%;
+  width: 84px;
+  height: 84px;
+  font-size: 18px;
+}
+
+#sale {
+  color: red;
+}
+
+div.price_product {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  margin: 60px 0;
+  padding: 0;
+}
+
+div#product_rel {
+  position: absolute;
+  bottom: 80px;
+}
+
+div.information_quantity#quant_product {
+  width: 320px;
+  position: absolute;
+  box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  height: 80px;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+
+div.information_basket.product {
+  width: 320px;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  display: flex;
+  padding: 0 30px;
+  cursor: pointer;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+img.product_buy {
+  height: 35px;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  margin-right: 15px;
+}
+
+/* 
+  recipe
+*/
+
+img.food {
+  width: 300px;
+  height: 600px;
+}
+
+div.food {
+  display: inline;
+  position: relative;
+}
+
+img.food {
+  height: 600px;
+  width: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+div.information_food {
+  width: 650px;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  font-size: 20px;
+}
+
+p.recipe_name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 30px 0 15px;
+}
+
+p.info_food {
+  text-indent: 30px;
+  margin: -15px 0 15px 0;
+}
+
+p.structure {
+  line-height: 200%;
+  text-indent: 30px;
+  color: #016a08;
+}
+
+span.structure {
+  margin-left: 5px;
+  color: black;
+}
+
+img.person {
+  height: 30px;
+}
+
+img.time {
+  height: 30px;
+}
+
+p.person_time {
+  line-height: 20px;
+  height: 20px;
+  margin: 0 30px 0 10px;
+}
+
+div.person_time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+div.recom {
+  position: relative;
+}
+
+p.recom {
+  font-size: 20px;
+  font-style: italic;
+  text-indent: 30px;
+  margin-bottom: 15px;
+}
+
+div.recipe {
+  position: relative;
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+div.step {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+img.steps {
+  position: relative;
+  width: 300px;
+  margin-right: 60px;
+}
+
+p.step {
+  line-height: 150%;
+  font-size: 20px;
+  font-weight: 600;
+  display: contents;
+}
+
+p.steps {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+p.recipe_h {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 60px 0 30px 0;
+}
+
+.buyAll {
+  color: #016a08;
+  font-size: 22px;
+  font-weight: 600;
+  background: none;
+  margin: 50px auto;
+  cursor: pointer;
+  width: 800px;
+  text-align: center;
+  display: block;
+}
+
+.buyAll:hover {
+  color: #da6900;
+
+}
+
+.buyAll.active {
+  color: #da6900;
+  pointer-events: none;
+}
+
+table.recipe {
+  position: relative;
+  margin: 0 auto;
+  width: 386px;
+}
+
+span.step {
+  font-weight: 600;
+  color: #da6900;
+}
+
+.relative {
+  position: relative;
+}
